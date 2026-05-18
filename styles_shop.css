@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('wallpaperDF.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    background-color: rgba(0, 0, 0, 0.7); /* Un poco más oscuro para resaltar */
+    backdrop-filter: blur(8px);
+}
+
+#main-title {
+    color: white;
+    font-size: 22px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover, nav a.active{
+    color: gray;
+}
