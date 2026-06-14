@@ -31,3 +31,23 @@ const mainTitle = document.querySelector("#main-title");
 mainTitle.addEventListener("click", function() {
     window.location.href = "index.html"; 
 });
+
+// 6. Redirección a login
+const loginLink = document.querySelector("#login-link");
+
+loginLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    window.location.href = "login.html";
+});
+
+// Mostrar bienvenida
+window.addEventListener("DOMContentLoaded", function() {
+    const usuario = localStorage.getItem("usuario");
+    const nombre = localStorage.getItem("nombre");
+
+    const welcomeText = document.querySelector("#welcome-text");
+
+    if(usuario && nombre){
+        welcomeText.textContent = "BIENVENIDO " + nombre + " (" + usuario + ")";
+    }
+});
