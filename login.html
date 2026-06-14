@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body{
+            margin: 0;
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container{
+            text-align: center;
+        }
+
+        input{
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 200px;
+        }
+
+        button{
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registro</h2>
+
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="usuario" placeholder="Usuario">
+    <input type="password" id="password" placeholder="Contraseña">
+
+    <button onclick="registrar()">Registrar</button>
+</div>
+
+<script>
+function registrar() {
+    const nombre = document.getElementById("nombre").value;
+    const usuario = document.getElementById("usuario").value;
+
+    if(nombre && usuario){
+        localStorage.setItem("nombre", nombre);
+        localStorage.setItem("usuario", usuario);
+
+        window.location.href = "index.html";
+    } else {
+        alert("Completa los campos");
+    }
+}
+</script>
+
+</body>
+</html>
