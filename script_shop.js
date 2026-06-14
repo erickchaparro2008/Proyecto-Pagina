@@ -30,4 +30,4 @@ followLink.addEventListener("click", function(event) {
 const mainTitle = document.querySelector("#main-title");
 mainTitle.addEventListener("click", function() {
     window.location.href = "index.html"; 
-});// Redirecciones estándar para mantener la navegación
+});
