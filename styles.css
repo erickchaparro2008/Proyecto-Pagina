@@ -55,3 +55,13 @@ main{
     width: 700px;
     max-width: 90%;
 }
+
+#welcome-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-family: "Arial Nova Light", Arial, sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
