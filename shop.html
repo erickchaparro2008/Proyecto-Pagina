@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daft Punk Merch Store</title>
+
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Daft Punk Merch Store</h1>
+
+        <div class="search-box">
+            <input type="text" placeholder="¿Qué buscas hoy?">
+        </div>
+    </header>
+
+    <section class="categories">
+        <button>Vinilos</button>
+        <button>Casets</button>
+        <button>Cascos</button>
+        <button>Camisetas</button>
+        <button>Chaquetas</button>
+        <button>Hoodies</button>
+        <button>CD's</button>
+    </section>
+
+    <section class="products">
+
+        <div class="card" onclick="openProduct(
+        'Alive',
+        'img/alive.jpg',
+        '$24 USD',
+        'Álbum Alive de Daft Punk'
+        )">
+            <img src="img/alive.jpg" alt="Alive">
+        </div>
+
+        <div class="card" onclick="openProduct(
+        'Around The World',
+        'img/around_the_world.jpg',
+        '$22 USD',
+        'Single Around The World'
+        )">
+            <img src="img/around_the_world.jpg" alt="Around The World">
+        </div>
+
+        <div class="card" onclick="openProduct(
+        'Human After All',
+        'img/human_after_all.jpg',
+        '$25 USD',
+        'Álbum Human After All'
+        )">
+            <img src="img/human_after_all.jpg" alt="Human After All">
+        </div>
+
+        <div class="card" onclick="openProduct(
+        'Burnin',
+        'img/burnin.jpg',
+        '$20 USD',
+        'Single Burnin'
+        )">
+            <img src="img/burnin.jpg" alt="Burnin">
+        </div>
+
+        <div class="card" onclick="openProduct(
+        'Random Access Memories',
+        'img/random_access_memories.jpg',
+        '$30 USD',
+        'Álbum Random Access Memories'
+        )">
+            <img src="img/random_access_memories.jpg" alt="Random Access Memories">
+        </div>
+
+        <div class="card" onclick="openProduct(
+        'Da Funk',
+        'img/da_funk.jpg',
+        '$20 USD',
+        'Single Da Funk'
+        )">
+            <img src="img/da_funk.jpg" alt="Da Funk">
+        </div>
+
+        <div class="card" onclick="openProduct(
+        'Something About Us',
+        'img/something_about_us.jpg',
+        '$22 USD',
+        'Single Something About Us'
+        )">
+            <img src="img/something_about_us.jpg" alt="Something About Us">
+        </div>
+
+        <div class="card" onclick="openProduct(
+        'Discovery',
+        'img/discovery.jpg',
+        '$28 USD',
+        'Álbum Discovery'
+        )">
+            <img src="img/discovery.jpg" alt="Discovery">
+        </div>
+
+    </section>
+
+    <div id="modal" class="modal">
+
+        <span class="close" onclick="closeProduct()">&times;</span>
+
+        <div class="modal-content">
+
+            <img id="modalImg">
+
+            <div class="info">
+
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalDesc"></p>
+
+                <h3 id="modalPrice"></h3>
+
+                <button>Comprar Ahora</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="shop.js"></script>
+
+</body>
+
+</html>
