@@ -16,7 +16,7 @@ videosLink.addEventListener("click", function(event) {
 const shopLink = document.querySelector("#shop-link");
 shopLink.addEventListener("click", function(event) {
     event.preventDefault();
-    window.location.href = "index_shop.html"; // Corregido el nombre
+    window.location.href = "shop.html";
 });
 
 // 4. Redirección de FOLLOW a su archivo correcto
