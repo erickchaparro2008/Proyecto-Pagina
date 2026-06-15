@@ -2,7 +2,7 @@
 const musicLink = document.querySelector("#music-link");
 musicLink.addEventListener("click", function(event) {
     event.preventDefault(); 
-    window.location.href = "https://open.spotify.com/playlist/0yYci7meoKNEI0wSFFxJiu?si=IZLruEv3SSCJBccIcVll-w&pt=06835c5f7a6e2c9c6dec83d13d195412&pi=1vWh0ys7SV6d-";
+    window.location.href = "https://youtube.com/playlist?list=PL9A1600EA18716662&si=WAtf9losPoDxq9C8";
 });
 
 // 2. Redirección de VIDEOS a YouTube
